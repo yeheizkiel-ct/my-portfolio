@@ -1,5 +1,5 @@
-$(document).ready(function(){
-	if ($(document).scrollTop() > 370){
+$(document).ready(function() {
+	if ($(document).scrollTop() > 370) {
 		$(".navbar").addClass("navbar-background");
 	}
 	else {
@@ -16,11 +16,11 @@ $(document).ready(function(){
 		}
 	});
 
-	$('.navbar-toggle').on("click",function(){
+	$('.navbar-toggle').on("click",function() {
 		$('.navbar-toggle').toggleClass("nyoba");
 	});
 
-	$('.link-transition').on("click",function(){
+	$('.link-transition').on("click",function() {
 		$('html, body').animate({
 			scrollTop: $($(this).attr('href')).offset().top
 		}, 500, 'swing');
